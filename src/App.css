@@ -1,0 +1,86 @@
+.nav {
+    /* border: solid red; */
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0
+}
+
+.nav li  {
+    list-style: none;
+    margin: 0 .5rem;
+
+}
+
+.pageContainer {
+    /* border:solid green; */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    
+}
+
+.imageContainer {
+    /* border:solid red; */
+    height:55%;
+    display:flex;
+    justify-content:center;
+    align-items: end;
+}
+
+.arrowBox1 {
+    /* border: solid blue; */
+    height:25rem;
+    width:25rem;
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1694840895/Portfolio%20textures/1_jjr408.svg);
+    background-size: cover;
+}
+
+.arrowBox2 {
+    /* border: solid blue; */
+    height:25rem;
+    width:25rem;
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1694840901/Portfolio%20textures/2_ma1yyu.svg);
+    background-size: cover;
+}
+
+.photoBox {
+    /* border:solid red; */
+    height:30rem;
+    width:30rem;
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1694841049/Portfolio%20textures/Green_Gradient_Minimalist_Simple_Instagram_Profile_Picture_1_jjlqds.svg);
+    background-size: cover;
+}
+
+.titleContainer {
+    /* border: solid orange; */
+    height: 34%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textBox1 {
+    /* border:solid green; */
+    width:40%;
+    height: 30%;
+    font-size: 80px;
+    padding:0;
+    text-align: center;
+    margin: 0;
+}
+
+.textBox2 {
+    /* border:solid green; */
+    width:40%;
+    height: 30%;
+    font-size: 52px;
+    font-weight: 300;
+    color: #BC84F6;
+    text-align: center;
+    margin: 0;
+}
