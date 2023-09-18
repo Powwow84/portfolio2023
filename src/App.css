@@ -5,18 +5,28 @@
     display: flex;
     justify-content: start;
     width: 100%;
+    margin: 0;
     padding: 2rem 0 ;
     background-color: black;
     opacity: 100%;
     /* box-shadow: inset 0 -10px 10px -10px rgba(255, 255, 255, 0.5); */
-    /* margin-top: 1.5; */
+    margin-top: 0;
+    top: 0
+    
 }
 
 .nav li  {
+
     list-style: none;
     margin: 0 .5rem;
     font-size: 1.2rem;
+    transition: transform 0.3s; 
 }
+
+.nav li.active {
+    color:red;
+    transform: scale(1.1); /* Scale up by 10% when active */
+  }
 
 .pageContainer, .pageContainer2{
     /* border:solid green; */
@@ -148,19 +158,20 @@
 .projectContainer {
     width: 100%;
     height: 85%;
-    /* border: solid red; */
+    /* border:solid red; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 .projects {
     /* border:solid white; */
-    height: 25rem;
+    height: 35rem;
     width: 30rem;
-    margin:1rem;
+    margin:1.5rem;
 }
 
 .projectImage {
@@ -175,9 +186,13 @@
     box-shadow: 0 0 20px rgb(255, 255, 255); /* Add a glow effect */
 }
 
-.projectText {
+.title {
     text-align: center;
     margin-top: 2rem;
+}
+.projectText {
+    margin-top: .5rem;
+    font-weight: 300;
 }
 
 .project2 {
@@ -194,6 +209,139 @@
     background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695017707/Portfolio%20textures/Screen_Shot_2023-09-17_at_11.12.52_PM_ugmc0u.png);
     background-size: cover;
     background-position: center center;
+}
+.project4 {
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695052040/Portfolio%20textures/Screen_Shot_2023-09-18_at_8.46.27_AM_tyzipr.png);
+    background-size: cover;
+    background-position: center center;
+}
+.project5 {
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695052218/Portfolio%20textures/Screen_Shot_2023-09-18_at_8.49.29_AM_i8jaar.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* *************************About********** */
+
+.aboutContainer {
+    width: 100%;
+    height: 85%;
+    /* border: solid red; */
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-self: center;
+    padding-bottom: 1rem;
+}
+
+.leftSide, .rightSide{
+    display:flex;
+    /* border:solid red; */
+    height: 100%;
+    width: 20%;
+}
+
+.rightSide {
+    justify-content: flex-end;
+}
+
+.cornerImage1 {
+    height: 20rem;
+    width: 20rem;
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695060869/Portfolio%20textures/1_jis0tt.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.cornerImage2 {
+    /* border: solid red; */
+    display: flex;
+    align-self: flex-end;
+    height: 20rem;
+    width: 20rem;
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695060876/Portfolio%20textures/2_wbjvc2.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.contactImage {
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695063641/Portfolio%20textures/1_gwbqd3.svg);
+    background-size: cover;
+    background-position: center center;
+}
+.contactImage2 {
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695063750/Portfolio%20textures/2_tohw68.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.contactImageTitle {
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695064278/Portfolio%20textures/Untitled_design_2_mil1rs.svg);
+    width: 70%;
+    height: 10%;
+    background-size: cover;
+    background-position: center center;
+    /* border: solid red; */
+}
+
+.contactMe {
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid green; */
+    width: 59.48%;
+    height: 100%;
+}
+
+
+.aboutMeTitle{
+    font-size: 90px;
+    /* border: solid red; */
+    margin: 1rem
+}
+
+.aboutMeBody {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+/* Experience --------------------------*/
+
+.xpbox {
+    /* border:solid white; */
+    padding:2rem;
+}
+
+.pspan{
+    font-weight: bold;
+}
+
+.experienceTitle {
+    font-size: 2rem;
+    color:aquamarine
+}
+
+.experienceP {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: .5rem;
+}
+
+.experienceP p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: .5rem;
+}
+
+.jobTitle {
+    padding-bottom: 1rem
 }
 
 @media (min-width: 60.1rem) and (max-width: 77rem) {
@@ -255,6 +403,12 @@
         height: 30%;
         width: 50%;
         margin-top: 0rem;
+    }
+
+    .contactImageTitle {
+        width: 100%;
+        height: 10%;
+        /* border: solid red; */
     }
 
 }
@@ -328,6 +482,24 @@
         /* border: solid red; */
         width: 90%;
         margin:0
+    }
+
+    .aboutMeTitle{
+        font-size: 70px;
+        /* border: solid red; */
+        margin: 1rem
+    }
+    
+    .aboutMeBody {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .contactImageTitle {
+        width: 100%;
+        height: 10%;
+        /* border: solid red; */
     }
 
 }
@@ -404,6 +576,29 @@
     .actionButton2 {
         /* border: solid blue; */
         width: 35%;
+    }
+
+    .aboutMeTitle{
+        font-size: 50px;
+        /* border: solid red; */
+        margin: 1rem
+    }
+    
+    .aboutMeBody {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .contactImageTitle {
+        width: 100%;
+        height: 10%;
+        /* border: solid red; */
+    }
+    
+    .contactMe {
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
     }
 }
 
@@ -482,5 +677,44 @@
     .actionButton2 {
         /* border: solid blue; */
         width: 35%;
+    }
+
+    .aboutMeTitle{
+        font-size: 30px;
+        /* border: solid red; */
+        margin: 1rem
+    }
+    
+    .aboutMeBody {
+        font-size: .8rem;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .contactImageTitle {
+        width: 100%;
+        height: 10%;
+        /* border: solid red; */
+    }
+    
+    .contactMe {
+        font-size: .8rem;
+    }
+
+    .experienceTitle {
+        font-size: 1.5rem;
+        color:aquamarine
+    }
+    
+    .experienceP {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: .5rem;
+    }
+    
+    .experienceP p{
+        font-size: 1rem;
+        font-weight: 300;
+        margin: .5rem;
     }
 }
