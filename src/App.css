@@ -18,7 +18,7 @@
     font-size: 1.2rem;
 }
 
-.pageContainer {
+.pageContainer, .pageContainer2{
     /* border:solid green; */
     height: 100vh;
     margin: 0;
@@ -26,6 +26,12 @@
     flex-direction: column;
     justify-content:end;
     
+}
+
+.pageContainer2 {
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695014380/Portfolio%20textures/Black_Purple_and_Pink_Neon_Animator_Online_Portfolio_dhvmgs.svg);
+    background-size: cover;
+    background-repeat: no repeat;
 }
 
 /* **********************  Home *********************** */
@@ -151,10 +157,43 @@
 }
 
 .projects {
-    border:solid white;
+    /* border:solid white; */
     height: 25rem;
     width: 30rem;
     margin:1rem;
+}
+
+.projectImage {
+    width: 100%;
+    height: 70%;
+    /* border:solid red; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectImage:hover {
+    transform: scale(1.1); /* Increase size by 10% */
+    box-shadow: 0 0 20px rgb(255, 255, 255); /* Add a glow effect */
+}
+
+.projectText {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.project2 {
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695012988/Portfolio%20textures/Screen_Shot_2023-09-17_at_9.19.31_PM_dio67v.png);
+    background-size: cover;
+    background-position: center center;
+}
+.project1 {
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695013919/Portfolio%20textures/Screen_Shot_2023-09-17_at_10.11.35_PM_rcemgn.png);
+    background-size: cover;
+    background-position: center center;
+}
+.project3 {
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1695017707/Portfolio%20textures/Screen_Shot_2023-09-17_at_11.12.52_PM_ugmc0u.png);
+    background-size: cover;
+    background-position: center center;
 }
 
 @media (min-width: 60.1rem) and (max-width: 77rem) {

@@ -30,7 +30,7 @@ function App() {
             element={<Projects />}
           />
           <Route 
-            path='/experience'
+            path='/resume'
             element={<Experience />}
           />
           <Route 
