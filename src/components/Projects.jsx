@@ -17,7 +17,7 @@ export default function Projects() {
                     <div className='projectText'>Runner 3D is a remmake of my first project Runner. I really enjoy developing games and when I had the opportunity to make another I decided to make it 3D. This project was built in 4 days after spending 3 days teaching myself how to use the Three.js library.</div>
                 </div>
                 <div className='projects'>
-                    <div className='projectImage project3'></div>
+                    <Link to='https://asteroid-destroyer.vercel.app/' target='blank'><div className='projectImage project3'></div></Link>
                     <div className='title'>Asteroid Destroyer</div>
                     <div className='projectText'>If you have 60 seconds you have time to play Asteroid Destroyer. Built with THREE.js, Cannon.es and GSAP. Spend 60 seconds shooting asteroids in a 3D space!</div>
                 </div>
