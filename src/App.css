@@ -3,15 +3,19 @@
     position: fixed;
     z-index: 1;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
-    padding: 0
+    padding: 2rem 0 ;
+    background-color: black;
+    opacity: 100%;
+    /* box-shadow: inset 0 -10px 10px -10px rgba(255, 255, 255, 0.5); */
+    /* margin-top: 1.5; */
 }
 
 .nav li  {
     list-style: none;
     margin: 0 .5rem;
-
+    font-size: 1.2rem;
 }
 
 .pageContainer {
@@ -23,6 +27,8 @@
     justify-content:end;
     
 }
+
+/* **********************  Home *********************** */
 
 .imageContainer {
     /* border:solid red; */
@@ -38,6 +44,8 @@
     width:25rem;
     background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1694840895/Portfolio%20textures/1_jjr408.svg);
     background-size: cover;
+    background-position: center center;
+    margin: 0rem auto
 }
 
 .arrowBox2 {
@@ -46,6 +54,8 @@
     width:25rem;
     background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1694840901/Portfolio%20textures/2_ma1yyu.svg);
     background-size: cover;
+    background-position: center center;
+    margin: 0rem auto
 }
 
 .photoBox {
@@ -53,7 +63,15 @@
     height:30rem;
     width:30rem;
     background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1694841049/Portfolio%20textures/Green_Gradient_Minimalist_Simple_Instagram_Profile_Picture_1_jjlqds.svg);
+    background-position: center center;
     background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+
+}
+
+.photoBox:hover{
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1694988455/Portfolio%20textures/Green_Gradient_Minimalist_Simple_Instagram_Profile_Picture_3_yfogol.svg);
+    
 }
 
 .titleContainer {
@@ -66,21 +84,364 @@
 
 .textBox1 {
     /* border:solid green; */
-    width:40%;
-    height: 30%;
     font-size: 80px;
-    padding:0;
+    padding:0 0;
     text-align: center;
     margin: 0;
 }
 
 .textBox2 {
-    /* border:solid green; */
-    width:40%;
-    height: 30%;
+    /* border:solid white; */
     font-size: 52px;
     font-weight: 300;
     color: #BC84F6;
     text-align: center;
-    margin: 0;
+    margin: .5rem;
+}
+
+.buttonBox {
+    display:flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* border:solid green; */
+    height: 30%;
+    width: 40%;
+    margin-top: 2rem;
+}
+
+.actionButton1 {
+    width: 30%;
+    height: 50%;
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1694981064/Portfolio%20textures/7_z9qc5m.svg);
+    background-size: cover;
+    background-position: center center;
+    margin: 1rem;
+}
+
+.actionButton1:hover {
+    transform: scale(1.1); /* Expand by 10% */
+}
+
+.actionButton2 {
+    /* border: solid blue; */
+    width:30%;
+    height: 50%;
+    background-image: url(https://res.cloudinary.com/dpxbrpprt/image/upload/v1694981065/Portfolio%20textures/8_tzfalt.svg);
+    background-size: cover;
+    background-position: center center;
+    margin:1rem;
+    transition: background 0.5s;
+}
+
+.actionButton2:hover {
+    transform: scale(1.1); /* Expand by 10% */
+}
+
+/* ************************** Projects ********************** */
+
+.projectContainer {
+    width: 100%;
+    height: 85%;
+    /* border: solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    border:solid white;
+    height: 25rem;
+    width: 30rem;
+    margin:1rem;
+}
+
+@media (min-width: 60.1rem) and (max-width: 77rem) {
+
+    /* .imageContainer {
+        align-items: center;
+    } */
+
+    .nav {
+        justify-content: center;
+        /* border: solid red; */
+    }
+
+    .pageContainer {
+        justify-content:center;
+        
+    }
+    
+    .arrowBox1 {
+        /* border: solid blue; */
+        height:19rem;
+        width:19rem;
+    }
+
+    .arrowBox2 {
+        /* border: solid blue; */
+        height:19rem;
+        width:19rem;
+    }
+
+    .photoBox {
+        /* border:solid red; */
+        height:23rem;
+        width:23rem;
+    }
+
+    .textBox1 {
+        /* border:solid green; */
+        /* width:40%;
+        height: 30%; */
+        font-size: 60px;
+        padding:0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .textBox2 {
+        /* border:solid green; */
+        /* width:40%;
+        height: 30%; */
+        font-size: 39px;
+        font-weight: 300;
+        color: #BC84F6;
+        text-align: center;
+        margin: .5rem;;
+    }
+
+    .buttonBox {
+        height: 30%;
+        width: 50%;
+        margin-top: 0rem;
+    }
+
+}
+
+@media (min-width: 42rem) and (max-width: 60rem) {
+
+    .nav {
+        justify-content: center;
+        /* border: solid red; */
+    }
+
+    .imageContainer {
+        align-items: center;
+        /* border: solid pink; */
+        height: 35%;
+    }
+
+    .pageContainer {
+        justify-content:center;
+        /* border: solid red; */
+    }
+    
+    .arrowBox1 {
+        /* border: solid blue; */
+        height:12rem;
+        width:12rem;
+    }
+
+    .arrowBox2 {
+        /* border: solid blue; */
+        height:12rem;
+        width:12rem;
+    }
+
+    .photoBox {
+        /* border:solid red; */
+        height:18rem;
+        width:18rem;
+    }
+
+    .textBox1 {
+        /* border:solid green; */
+        width:100%;
+        height: 20%;
+        font-size: 60px;
+        padding:0;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .textBox2 {
+        /* border:solid green; */
+        width:100%;
+        height: 20%;
+        font-size: 35px;
+        font-weight: 300;
+        color: #BC84F6;
+        text-align: center;
+        margin: .5rem;
+    }
+
+    .titleContainer {
+        /* border: solid orange; */
+        height: 34%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonBox {
+        /* border: solid red; */
+        width: 90%;
+        margin:0
+    }
+
+}
+
+
+@media (min-width: 31rem) and (max-width: 42rem) {
+    .arrowBox1,
+    .arrowBox2 {
+        display: none;
+    }
+
+    .nav {
+        justify-content: center;
+        /* border: solid red; */
+        width: 96%;
+    }
+
+    .imageContainer {
+        align-items: center;
+        /* border: solid pink; */
+        height: 35%;
+    }
+
+    .pageContainer {
+        justify-content:center;
+        /* border: solid red; */
+    }
+    
+    .photoBox {
+        /* border:solid red; */
+        height:23rem;
+        width:23rem;
+    }
+
+    .textBox1 {
+        /* border:solid green; */
+        width:100%;
+        height: 20%;
+        font-size: 60px;
+        padding:0;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .textBox2 {
+        /* border:solid green; */
+        width:100%;
+        height: 20%;
+        font-size: 35px;
+        font-weight: 300;
+        color: #BC84F6;
+        text-align: center;
+        margin: .5rem;
+    }
+
+    .titleContainer {
+        /* border: solid orange; */
+        height: 34%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonBox {
+        /* border: solid red; */
+        width: 90%;
+        margin:0
+    }
+
+    .actionButton1{
+        width: 35%;
+    }
+
+    .actionButton2 {
+        /* border: solid blue; */
+        width: 35%;
+    }
+}
+
+@media (max-width: 31rem) {
+    .arrowBox1,
+    .arrowBox2 {
+        display: none;
+    }
+
+    .nav {
+        justify-content: center;
+        width: 96%;
+        padding-top: 1rem;
+        /* border: solid red; */
+    }
+
+    .nav li{
+        font-size: 1rem;
+        margin:.2rem;
+        /* border:solid red */
+    }
+
+    .pageContainer {
+        /* border:solid green; */
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        
+    }
+
+    .imageContainer {
+        /* border:solid red; */
+        align-items: center;
+        height: 50%;
+    }
+
+    .photoBox {
+        /* border:solid red; */
+        height:18rem;
+        width:18rem;
+        margin-top: 1rem;
+    }
+
+    .textBox1 {
+        /* border:solid green; */
+        width:100%;
+        height: 20%;
+        font-size: 45px;
+        padding:0;
+        text-align: center;
+        margin-top: 0rem;
+    }
+    
+    .textBox2 {
+        /* border:solid green; */
+        width:100%;
+        height: 20%;
+        font-size: 35px;
+        font-weight: 300;
+        color: #BC84F6;
+        text-align: center;
+    }
+
+    .buttonBox {
+        /* border: solid red; */
+        width: 100%;
+        margin:0;
+    }
+
+    .actionButton1{
+        width: 35%;
+    }
+
+    .actionButton2 {
+        /* border: solid blue; */
+        width: 35%;
+    }
 }

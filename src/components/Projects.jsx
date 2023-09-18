@@ -1,5 +1,13 @@
 export default function Projects() {
     return(
-        <>Projects</>
+        <div className='pageContainer'>
+            <div className='projectContainer'>
+                <div className='projects'></div>
+                <div className='projects'></div>
+                <div className='projects'></div>
+                <div className='projects'></div>
+                <div className='projects'></div>
+            </div>
+        </div>
     )
 }
