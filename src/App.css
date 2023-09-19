@@ -169,14 +169,14 @@
 
 .projects {
     /* border:solid white; */
-    height: 35rem;
+    height: 32rem;
     width: 30rem;
     margin:1.5rem;
 }
 
 .projectImage {
     width: 100%;
-    height: 70%;
+    height: 60%;
     /* border:solid red; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
