@@ -8,11 +8,11 @@ export default function Experience() {
                     <ul>
                         <li className="experienceP"><span class='pspan'>Programming Languages:</span> JavaScript, Typescript, Python, Golang</li>
                         <li className="experienceP"><span class='pspan'>Web Development:</span> Node.js, React, Express, Three.js, Cannon.es, Sequelize, HTML5, CSS</li>
+                        <li className="experienceP"><span class='pspan'>Game Development:</span> Unity</li>
                         <li className="experienceP"><span class='pspan'>Database:</span> SQL, PostgreSQL, MongoDB</li>
                         <li className="experienceP"><span class='pspan'>Version Control:</span> Git</li>
-                        <li className="experienceP"><span class='pspan'>Containers & Orchestration:</span> Docker, Kubernetes, Helm</li>
+                        <li className="experienceP"><span class='pspan'>Containers & Orchestration:</span> Docker, Kubernetes</li>
                         <li className="experienceP"><span class='pspan'> Cloud Providers:</span> AWS, Google Cloud, Azure</li>
-                        <li className="experienceP"><span class='pspan'>Cloud Native Tools:</span> Eksctl, Lens, Istio, Kiali, AWS CloudWatch</li>
                         <li className="experienceP"><span class='pspan'>Monitoring and Visualization:</span> Prometheus, Grafana, Splunk</li>
                         <li className="experienceP"><span class='pspan'>CI/CD & Automation Tools:</span> Jenkins, Ansible, Terraform</li>
                         <li className="experienceP"><span class='pspan'>Collaboration Tools:</span> Jira, Confluence, Notion, Figma</li>
